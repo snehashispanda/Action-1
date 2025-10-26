@@ -3,12 +3,15 @@ on: push
 job:
   first job:
      runs-on: ubuntu-latest
-     -name: welcome messgae
-      run: echo "my first github action job"
-     -name: list files
-      run: li
-    -name: read files
-     run: cat README.md
-     
+     steps:
+     - name: checkout repo
+       uses: actions/checkout@v5
+     - name: welcome messgae
+       run: echo "my first github action job"
+     - name: list files
+       run: li
+     - name: read files
+       run: cat README.md
+
 
  
