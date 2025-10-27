@@ -9,6 +9,6 @@ jobs:
      - name: welcome messgae
        run: echo "my first github action job"
      - name: list files
-       run: li
+       run: ls
      - name: read files
        run: cat README.md
